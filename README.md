@@ -32,6 +32,8 @@ The system follows a **3-layer architecture**:
 2. Open `frontend/index.html`
 3. Use the app in your browser
 
-## Author
+## Authors
 
-Aisha Jameela Abdulkadir
+Aisha Jameela Abdulkadir- 210513825
+Samır Maghrabı -200513258
+Halit Elşelmani-220513835
