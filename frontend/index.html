@@ -1,39 +1,158 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Practical Gift Generator</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Practical Gift Generator</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-<h1>Practical Gift Generator 🎁</h1>
+<!-- WEBSITE NAVIGATION -->
+<header>
 
-<p>Find the perfect practical gift.</p>
+<nav class="navbar">
 
-<button onclick="generateGift()">Generate Gift</button>
+<h1 class="logo">🎁 GiftGen</h1>
 
-<p id="result"></p>
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#generator">Try Generator</a></li>
+<li><a href="#about">About</a></li>
+</ul>
 
-<link rel="stylesheet" href="./style.css">
-<script src="./script.js"></script>
-<h2>Choose Category</h2>
+</nav>
+
+</header>
+
+
+<!-- HERO SECTION -->
+<section id="home" class="hero">
+
+<h2>Find The Perfect Practical Gift</h2>
+
+<p>
+Discover thoughtful and useful gift ideas based on
+budget, category, and occasion.
+</p>
+
+<a href="#generator" class="cta-button">Start Generating Gifts</a>
+
+</section>
+
+
+<!-- FEATURES SECTION -->
+<section id="features" class="features">
+
+<h2>Website Features</h2>
+
+<div class="feature-container">
+
+<div class="feature-card">
+<h3>Smart Gift Suggestions</h3>
+<p>The system suggests practical gift ideas based on user preferences.</p>
+</div>
+
+<div class="feature-card">
+<h3>Budget Friendly</h3>
+<p>Users can select their budget to receive affordable recommendations.</p>
+</div>
+
+<div class="feature-card">
+<h3>Occasion Based</h3>
+<p>Choose occasions like birthdays, holidays, or graduation.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- GIFT GENERATOR SECTION -->
+<section id="generator" class="generator">
+
+<h2>Generate Your Gift Idea</h2>
+
+<form id="giftForm">
+
+<label>Category</label>
 
 <select id="category">
-<option value="tech">Tech</option>
+<option value="tech">Technology</option>
 <option value="study">Study</option>
-<option value="lifestyle">Lifestyle</option>
+<option value="selfcare">Self Care</option>
+<option value="home">Home</option>
 </select>
 
-<h2>Budget</h2>
+
+<label>Budget</label>
 
 <select id="budget">
-<option value="low">Under $20</option>
-<option value="medium">$20-$50</option>
+<option value="low">$0 - $20</option>
+<option value="medium">$20 - $50</option>
+<option value="high">$50+</option>
 </select>
 
-<button onclick="generateGift()">Generate Gift</button>
 
-<p id="result"></p></body>
+<label>Occasion</label>
+
+<select id="occasion">
+<option value="birthday">Birthday</option>
+<option value="holiday">Holiday</option>
+<option value="graduation">Graduation</option>
+<option value="general">Any Occasion</option>
+</select>
+
+<button type="button" onclick="generateGift()">
+Generate Gift
+</button>
+
+</form>
+
+<div id="giftResult"></div>
+
+</section>
+
+
+<!-- ABOUT SECTION -->
+<section id="about">
+
+<h2>About This Website</h2>
+
+<p>
+The Practical Gift Generator is a website designed to help users
+quickly find practical and meaningful gifts. The system analyzes
+user preferences such as category, budget, and occasion to
+recommend suitable gift ideas.
+</p>
+
+<p>
+This website was developed as part of the SWE332 Software
+Architecture course project.
+</p>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+<p>© 2026 Practical Gift Generator</p>
+
+<p>SWE332 Software Architecture Project</p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
 </html>
