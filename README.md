@@ -43,5 +43,5 @@ This layer stores the gift information and categories used by the website to gen
 ## Authors
 
 Aisha Jameela Abdulkadir - 210513825  
-Samır Maghrabı - 200513258  
+Samir Maghrabi - 200513258  
 Halit Elşelmani - 220513835
