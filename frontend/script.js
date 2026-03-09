@@ -116,3 +116,12 @@ message = "🎁 Recommended gift: ";
 result.innerHTML = message + "<strong>" + randomGift + "</strong>";
 
 }
+/*
+Gift Recommendation Algorithm
+
+1. Collect user preferences (category, budget, occasion)
+2. Search gift database
+3. Filter based on category and budget
+4. Randomly select gift from valid options
+5. Display recommendation to user
+*/
