@@ -7,59 +7,40 @@ const result = document.getElementById("giftResult");
 }
 /* Gift Database */
 
-let gifts = {
+const gifts = {
 
 tech: {
 
 low: ["USB Flash Drive", "Phone Stand", "Cable Organizer", "Screen Cleaner Kit"],
-
 medium: ["Wireless Mouse", "Bluetooth Speaker", "Portable Charger", "LED Desk Light"],
-
 high: ["Smart Watch", "Wireless Earbuds", "Mechanical Keyboard", "Tablet Stand"]
 
 },
 
 study: {
 
-low: ["Notebook", "Planner", "Pen Set", "Sticky Notes Kit"],
-
-medium: ["Desk Lamp", "Whiteboard", "Book Stand", "Study Timer"],
-
-high: ["Noise Cancelling Headphones", "Ergonomic Chair Cushion", "Standing Desk Converter"]
+  low: ["Notebook", "Planner", "Pen Set", "Sticky Notes Kit"],
+  medium: ["Desk Lamp", "Whiteboard", "Book Stand", "Study Timer"],
+  high: ["Noise Cancelling Headphones", "Ergonomic Chair Cushion", "Standing Desk Converter"]
 
 },
 
-lifestyle: {
-
-low: ["Coffee Mug", "Water Bottle", "Scented Candle", "Key Organizer"],
-
-medium: ["Yoga Mat", "Aroma Diffuser", "Tea Set", "Indoor Plant"],
-
-high: ["Fitness Tracker", "Massage Gun", "Smart Water Bottle"]
-
-},
-
-home: {
-
-low: ["Kitchen Timer", "Measuring Cup Set", "Mini Storage Boxes"],
-
-medium: ["Electric Kettle", "Desk Organizer", "Bedside Lamp"],
-
-high: ["Air Fryer", "Robot Vacuum", "Smart Light System"]
-
-},
-
-fashion: {
-
-low: ["Scarf", "Cap", "Bracelet"],
-
-medium: ["Leather Wallet", "Handbag", "Sunglasses"],
-
-high: ["Designer Watch", "Luxury Perfume"]
-
-}
-
-};
+ selfcare: {
+      low: ["Coffee Mug", "Water Bottle", "Scented Candle", "Key Organizer"],
+      medium: ["Yoga Mat", "Aroma Diffuser", "Tea Set", "Indoor Plant"],
+      high: ["Fitness Tracker", "Massage Gun", "Smart Water Bottle", "Spa Gift Card"]
+    },
+ home: {
+      low: ["Kitchen Timer", "Measuring Cup Set", "Mini Storage Boxes", "Coasters Set"],
+      medium: ["Electric Kettle", "Desk Organizer", "Bedside Lamp", "Throw Blanket"],
+      high: ["Air Fryer", "Robot Vacuum", "Smart Light System", "Espresso Machine"]
+    },
+ fashion: {
+      low: ["Scarf", "Cap", "Bracelet", "Socks Set"],
+      medium: ["Leather Wallet", "Handbag", "Sunglasses", "Belt"],
+      high: ["Designer Watch", "Luxury Perfume", "Premium Sunglasses", "Leather Bag"]
+    }
+  };
 
 
 /* Check if category exists */
