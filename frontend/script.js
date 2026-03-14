@@ -1,10 +1,9 @@
 function generateGift(event) {  
   event.preventDefault();        
-  let category = document.getElementById("category").value;
-let budget = document.getElementById("budget").value;
-let occasion = document.getElementById("occasion").value;
-let result = document.getElementById("giftResult");
-
+const category = document.getElementById("category").value;
+const budget = document.getElementById("budget").value;
+const occasion = document.getElementById("occasion").value;
+const result = document.getElementById("giftResult");
 }
 /* Gift Database */
 
