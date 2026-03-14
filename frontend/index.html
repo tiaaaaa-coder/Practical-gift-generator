@@ -75,38 +75,43 @@ budget, category, and occasion.
 
 </section>
 
-
 <!-- GIFT GENERATOR SECTION -->
 <section id="generator" class="generator">
+  <h2>Generate Your Gift Idea</h2>
 
-<h2>Generate Your Gift Idea</h2>
+  <form id="giftForm" onsubmit="handleFormSubmit(event)">
+    <label for="category">Category</label>
+    <select id="category" name="category" required>
+      <option value="" disabled selected>Select a category</option>
+      <option value="tech">Technology</option>
+      <option value="study">Study</option>
+      <option value="selfcare">Self Care</option>
+      <option value="home">Home</option>
+    </select>
 
-<!--  FIXED -->
-<label for="category">Category</label>
-<select id="category" name="category">
+    <label for="budget">Budget</label>
+    <select id="budget" name="budget" required>
+      <option value="" disabled selected>Select a budget</option>
+      <option value="low">$0 - $20</option>
+      <option value="medium">$20 - $50</option>
+      <option value="high">$50+</option>
+    </select>
 
-<option value="tech">Technology</option>
-<option value="study">Study</option>
-<option value="selfcare">Self Care</option>
-<option value="home">Home</option>
-</select>
+    <label for="occasion">Occasion</label>
+    <select id="occasion" name="occasion" required>
+      <option value="" disabled selected>Select an occasion</option>
+      <option value="birthday">Birthday</option>
+      <option value="holiday">Holiday</option>
+      <option value="graduation">Graduation</option>
+      <option value="general">Any Occasion</option>
+    </select>
 
+    <button type="submit">Generate Gift</button>
+  </form>
 
-<label for="budget">Budget</label>
-<select id="budget" name="budget">
-<option value="low">$0 - $20</option>
-<option value="medium">$20 - $50</option>
-<option value="high">$50+</option>
-</select>
+  <div id="giftResult"></div>
+</section>
 
-
-<label for="occasion">Occasion</label>
-<select id="occasion" name="occasion">
-<option value="birthday">Birthday</option>
-<option value="holiday">Holiday</option>
-<option value="graduation">Graduation</option>
-<option value="general">Any Occasion</option>
-</select>
 
 <!-- FIXED HTML -->
 <form id="giftForm" onsubmit="handleFormSubmit(event)">
