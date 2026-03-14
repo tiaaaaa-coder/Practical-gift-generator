@@ -1,11 +1,11 @@
-function generateGift() {
-
-let category = document.getElementById("category").value;
+function generateGift(event) {  
+  event.preventDefault();        
+  let category = document.getElementById("category").value;
 let budget = document.getElementById("budget").value;
 let occasion = document.getElementById("occasion").value;
 let result = document.getElementById("giftResult");
 
-
+}
 /* Gift Database */
 
 let gifts = {
