@@ -83,7 +83,7 @@ budget, category, and occasion.
 
 <form id="giftForm">
 
-<!-- ✅ FIXED -->
+<!--  FIXED -->
 <label for="category">Category</label>
 <select id="category" name="category">
 
@@ -110,9 +110,13 @@ budget, category, and occasion.
 <option value="general">Any Occasion</option>
 </select>
 
-<button type="button" onclick="generateGift()">
-Generate Gift
-</button>
+<!-- FIXED HTML -->
+<form id="giftForm" onsubmit="handleFormSubmit(event)">
+  <!-- your labels and selects... -->
+  
+  <button type="submit">Generate Gift</button>
+</form>
+
 
 </form>
 
