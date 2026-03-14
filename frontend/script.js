@@ -80,10 +80,9 @@ result.innerText = "No gifts available for this budget.";
 return;
 
 }
-
-
-const options = gifts[category][budget];
-const randomGift = options[Math.floor(Math.random() * options.length)];
+ const options = gifts[category][budget];
+  const randomIndex = Math.floor(Math.random() * options.length);
+  const randomGift = options[randomIndex];
 
 /* Occasion message */
 
@@ -141,7 +140,7 @@ function addRegenerateButton(container, category, budget, occasion) {
 }
 
 // ============================================
-// EVENT LISTENER SETUP (Add to bottom of file)
+// EVENT LISTENER SETUP 
 // ============================================
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('giftForm');
