@@ -4,7 +4,7 @@ const category = document.getElementById("category").value;
 const budget = document.getElementById("budget").value;
 const occasion = document.getElementById("occasion").value;
 const result = document.getElementById("giftResult");
-}
+
 // Clear previous results
   result.innerHTML = '';
   
