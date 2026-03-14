@@ -113,8 +113,11 @@ message = "🎁 Recommended gift: ";
 
 /* Display result */
 
-result.innerHTML = message + "<strong>" + randomGift + "</strong>";
 
+result.innerHTML = ''; 
+const p = document.createElement('p');
+p.innerHTML = message + '<strong>' + randomGift.replace(/</g, '&lt;') + '</strong>';
+result.appendChild(p);
 }
 /*
 Gift Recommendation Algorithm
