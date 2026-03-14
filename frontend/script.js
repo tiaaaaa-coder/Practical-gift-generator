@@ -82,15 +82,8 @@ return;
 }
 
 
-/* Get options */
-
-let options = gifts[category][budget];
-
-
-/* Random recommendation */
-
-let randomGift = options[Math.floor(Math.random() * options.length)];
-
+const options = gifts[category][budget];
+const randomGift = options[Math.floor(Math.random() * options.length)];
 
 /* Occasion message */
 
