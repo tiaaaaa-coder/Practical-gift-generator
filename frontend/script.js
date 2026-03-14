@@ -5,6 +5,14 @@ const budget = document.getElementById("budget").value;
 const occasion = document.getElementById("occasion").value;
 const result = document.getElementById("giftResult");
 }
+// Clear previous results
+  result.innerHTML = '';
+  
+  // Check if all fields are filled
+  if (!category || !budget || !occasion) {
+    result.textContent = "⚠️ Please fill in all fields.";
+    return;
+  }
 /* Gift Database */
 
 const gifts = {
