@@ -102,21 +102,54 @@ else{
 message = "🎁 Recommended gift: ";
 }
 
-
-/* Display result */
-
-
-result.innerHTML = ''; 
-const p = document.createElement('p');
-p.innerHTML = message + '<strong>' + randomGift.replace(/</g, '&lt;') + '</strong>';
-result.appendChild(p);
+  // Create container
+  const container = document.createElement('div');
+  container.className = 'gift-result-container';
+  
+  // Create message element
+  const messageSpan = document.createElement('span');
+  messageSpan.textContent = message;
+  
+  // Create gift element (bold)
+  const giftStrong = document.createElement('strong');
+  giftStrong.textContent = randomGift;
+  
+  // Assemble
+  container.appendChild(messageSpan);
+  container.appendChild(giftStrong);
+  result.appendChild(container);
+  
+  // "Generate Another" button
+  addRegenerateButton(result, category, budget, occasion);
 }
-/*
-Gift Recommendation Algorithm
 
-1. Collect user preferences (category, budget, occasion)
-2. Search gift database
-3. Filter based on category and budget
-4. Randomly select gift from valid options
-5. Display recommendation to user
-*/
+// ============================================
+// "Try Again" functionality
+// ============================================
+function addRegenerateButton(container, category, budget, occasion) {
+  const btn = document.createElement('button');
+  btn.textContent = '🔄 Generate Another';
+  btn.className = 'regenerate-btn';
+  btn.style.marginTop = '10px';
+  btn.onclick = function() {
+    // Create fake event object
+    const fakeEvent = { preventDefault: () => {} };
+    generateGift(fakeEvent);
+  };
+  container.appendChild(document.createElement('br'));
+  container.appendChild(btn);
+}
+
+// ============================================
+// EVENT LISTENER SETUP (Add to bottom of file)
+// ============================================
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('giftForm');
+  
+  if (form) {
+    form.addEventListener('submit', generateGift);
+  } else {
+    console.error("Gift form not found!");
+  }
+});
+
