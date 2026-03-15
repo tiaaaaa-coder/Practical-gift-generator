@@ -207,3 +207,189 @@ text-align:center;
 padding:20px;
 margin-top:40px;
 }
+/* 
+   ADDITIONS FOR FAVORITES & ENHANCED UI
+ */
+
+/* Error */
+.error-message,
+.loading {
+  padding: 12px;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+.error-message {
+  background: #fdf2f2;
+  color: #e74c3c;
+  border-left: 4px solid #e74c3c;
+}
+
+.loading {
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+/* Gift Result Container (aligns with UIFactory.createGiftCard) */
+.gift-result-container {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #5b5be6;
+  margin: 20px auto;
+  max-width: 400px;
+  text-align: left;
+}
+
+.occasion-badge {
+  display: block;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.gift-name {
+  color: #2c3e50;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+/* Action Buttons  */
+.action-buttons {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-favorite,
+.btn-regenerate,
+.view-fav-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.btn-favorite {
+  background: #ff6b6b;
+  color: white;
+}
+
+.btn-favorite:hover {
+  background: #ff5252;
+}
+
+.btn-regenerate {
+  background: #4ecdc4;
+  color: white;
+}
+
+.btn-regenerate:hover {
+  background: #26a69a;
+}
+
+.view-fav-btn {
+  background: #95a5a6;
+  color: white;
+  margin-top: 15px;
+}
+
+.view-fav-btn:hover {
+  background: #7f8c8d;
+}
+
+/* Favorites Display */
+.favorites-wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.favorites-wrapper h3 {
+  color: #5b5be6;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.favorite-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.fav-info strong {
+  display: block;
+  color: #2c3e50;
+  margin-bottom: 4px;
+}
+
+.fav-info small {
+  color: #7f8c8d;
+  font-size: 0.85em;
+}
+
+.btn-remove {
+  background: transparent;
+  border: none;
+  font-size: 1.3em;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.2s;
+}
+
+.btn-remove:hover {
+  transform: scale(1.1);
+}
+
+.btn-clear-all {
+  background: #e74c3c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.btn-clear-all:hover {
+  background: #c0392b;
+}
+
+/* Empty State */
+.empty-state {
+  color: #7f8c8d;
+  font-style: italic;
+  padding: 20px;
+}
+
+/* Fade Animation */
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive adjustments for favorites */
+@media (max-width: 600px) {
+  .favorite-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .btn-remove {
+    align-self: flex-end;
+  }
+}
