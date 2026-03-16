@@ -13,32 +13,100 @@ const APP_CONFIG = {
 // DATABASE MODULE (Singleton Pattern)
 // Single source of truth for gift data
 const GiftDatabase = (function() {
-  // Private data - encapsulated
   const database = {
     tech: {
-      low: ['USB Flash Drive', 'Phone Stand', 'Cable Organizer', 'Screen Cleaner Kit'],
-      medium: ['Wireless Mouse', 'Bluetooth Speaker', 'Portable Charger', 'LED Desk Light'],
-      high: ['Smart Watch', 'Wireless Earbuds', 'Mechanical Keyboard', 'Tablet Stand']
+      low: [
+        'USB Flash Drive', 'Phone Stand', 'Cable Organizer', 'Screen Cleaner Kit',
+        'Laptop Sleeve', 'Webcam Cover', 'Cable Ties Set', 'Phone Ring Holder',
+        'Screen Protector', 'Earphone Case', 'Mini Flashlight', 'Bluetooth Tracker'
+      ],
+      medium: [
+        'Wireless Mouse', 'Bluetooth Speaker', 'Portable Charger', 'LED Desk Light',
+        'Mechanical Keyboard Keycaps', 'USB-C Hub', 'Wireless Charging Pad',
+        'Noise Cancelling Earbuds', 'Smart Home Plug', 'Digital Photo Frame',
+        'Fitness Tracker Band', 'Tablet Stylus', 'Portable SSD 256GB'
+      ],
+      high: [
+        'Smart Watch', 'Wireless Earbuds Pro', 'Mechanical Keyboard', 'Tablet Stand',
+        'Noise Cancelling Headphones', 'Smart Display', 'Robot Vacuum',
+        'Gaming Mouse', '4K Webcam', 'Smart Doorbell', 'Drone',
+        'VR Headset', 'Smart Thermostat', 'Electric Standing Desk'
+      ]
     },
     study: {
-      low: ['Notebook', 'Planner', 'Pen Set', 'Sticky Notes Kit'],
-      medium: ['Desk Lamp', 'Whiteboard', 'Book Stand', 'Study Timer'],
-      high: ['Noise Cancelling Headphones', 'Ergonomic Chair Cushion', 'Standing Desk Converter']
+      low: [
+        'Notebook', 'Planner', 'Pen Set', 'Sticky Notes Kit',
+        'Highlighters Pack', 'Index Cards', 'Binder Clips Set', 'Ruler Set',
+        'Pencil Case', 'Erasers Pack', 'Bookmark Set', 'Paper Clips'
+      ],
+      medium: [
+        'Desk Lamp', 'Whiteboard', 'Book Stand', 'Study Timer',
+        'Laptop Stand', 'Document Organizer', 'Noise Cancelling Earplugs',
+        'Adjustable Book Light', 'Desk Organizer Set', 'Scientific Calculator',
+        'Label Maker', 'Portable Scanner', 'Digital Notebook'
+      ],
+      high: [
+        'Noise Cancelling Headphones', 'Ergonomic Chair Cushion', 'Standing Desk Converter',
+        'Digital Drawing Tablet', 'Smart Pen', 'E-Reader',
+        'Portable Monitor', 'Document Camera', 'Smart Notebook',
+        'Ergonomic Keyboard', 'Blue Light Glasses Premium', 'Air Purifier'
+      ]
     },
     selfcare: {
-      low: ['Coffee Mug', 'Water Bottle', 'Scented Candle', 'Key Organizer'],
-      medium: ['Yoga Mat', 'Aroma Diffuser', 'Tea Set', 'Indoor Plant'],
-      high: ['Fitness Tracker', 'Massage Gun', 'Smart Water Bottle', 'Spa Gift Card']
+      low: [
+        'Coffee Mug', 'Water Bottle', 'Scented Candle', 'Key Organizer',
+        'Lip Balm Set', 'Hand Cream', 'Sleep Mask', 'Bath Bombs',
+        'Face Mask Set', 'Essential Oil Roller', 'Journal', 'Stress Ball'
+      ],
+      medium: [
+        'Yoga Mat', 'Aroma Diffuser', 'Tea Set', 'Indoor Plant',
+        'Weighted Blanket', 'Foam Roller', 'Meditation Cushion',
+        'Skincare Set', 'Massage Pillow', 'Foot Spa', 'Hair Care Kit',
+        'Bathrobe', 'Sleep Sound Machine'
+      ],
+      high: [
+        'Fitness Tracker', 'Massage Gun', 'Smart Water Bottle', 'Spa Gift Card',
+        'Smart Scale', 'Air Purifier', 'Sun Lamp',
+        'Smart Sleep Tracker', 'Premium Skincare Device', 'Infrared Sauna Blanket',
+        'Electric Toothbrush Premium', 'Hair Styling Tool Set'
+      ]
     },
     home: {
-      low: ['Kitchen Timer', 'Measuring Cup Set', 'Mini Storage Boxes', 'Coasters Set'],
-      medium: ['Electric Kettle', 'Desk Organizer', 'Bedside Lamp', 'Throw Blanket'],
-      high: ['Air Fryer', 'Robot Vacuum', 'Smart Light System', 'Espresso Machine']
+      low: [
+        'Kitchen Timer', 'Measuring Cup Set', 'Mini Storage Boxes', 'Coasters Set',
+        'Dish Soap Dispenser', 'Sponge Holder', 'Reusable Food Wraps', 'Herb Scissors',
+        'Jar Opener', 'Sink Strainer', 'Cabinet Hooks', 'Drawer Organizers'
+      ],
+      medium: [
+        'Electric Kettle', 'Desk Organizer', 'Bedside Lamp', 'Throw Blanket',
+        'Coffee Maker', 'Toaster Oven', 'Blender', 'Rice Cooker',
+        'Robot Vacuum Mop', 'Smart Light Bulbs Set', 'Essential Oil Diffuser',
+        'Cookware Set', 'Bedding Set', 'Towel Set'
+      ],
+      high: [
+        'Air Fryer', 'Robot Vacuum', 'Smart Light System', 'Espresso Machine',
+        'Smart Refrigerator', 'Instant Pot Duo', 'Stand Mixer',
+        'Smart Thermostat', 'Security Camera System', 'Smart Lock',
+        'Air Purifier Pro', 'Indoor Garden System', 'Smart Mirror'
+      ]
     },
     fashion: {
-      low: ['Scarf', 'Cap', 'Bracelet', 'Socks Set'],
-      medium: ['Leather Wallet', 'Handbag', 'Sunglasses', 'Belt'],
-      high: ['Designer Watch', 'Luxury Perfume', 'Premium Sunglasses', 'Leather Bag']
+      low: [
+        'Scarf', 'Cap', 'Bracelet', 'Socks Set',
+        'Hair Accessories Set', 'Tote Bag', 'Sunglasses Case', 'Keychain',
+        'Pocket Square', 'Tie Clip', 'Fashion Mask', 'Phone Lanyard'
+      ],
+      medium: [
+        'Leather Wallet', 'Handbag', 'Sunglasses', 'Belt',
+        'Watch', 'Jewelry Set', 'Leather Gloves', 'Crossbody Bag',
+        'Silk Scarf', 'Beanie Set', 'Card Holder', 'Travel Organizer'
+      ],
+      high: [
+        'Designer Watch', 'Luxury Perfume', 'Premium Sunglasses', 'Leather Bag',
+        'Designer Scarf', 'Gold Jewelry', 'Smart Ring',
+        'Luxury Wallet', 'Cashmere Sweater', 'Designer Belt',
+        'Premium Leather Jacket', 'Smart Glasses'
+      ]
     }
   };
 
