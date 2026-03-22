@@ -19,7 +19,7 @@ The website is designed to be simple, fast, and accessible through any modern we
 - HTML – for structuring the website pages
 - CSS – for styling and layout design
 - JavaScript – for interactive functionality and gift generation logic
-- Node.js (Optional) – for server-side processing and data handling if backend functionality is implemented
+- Node.js – for server-side processing and data handling if backend functionality is implemented
 
 ## Website Architecture
 
