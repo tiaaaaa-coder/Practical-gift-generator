@@ -1,6 +1,4 @@
-// ==========================
-// Gift Database
-// ==========================
+
 const gifts = [
   {
     id: 1,
@@ -28,9 +26,7 @@ const gifts = [
   }
 ];
 
-// ==========================
-// Filter Function
-// ==========================
+
 function findGifts(maxPrice, occasion, person) {
   return gifts.filter(gift =>
     gift.price <= maxPrice &&
