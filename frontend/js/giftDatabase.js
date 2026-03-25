@@ -35,5 +35,4 @@ function findGifts(maxPrice, occasion, person) {
   );
 }
 
-// Make function available globally
 window.findGifts = findGifts;
