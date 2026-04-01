@@ -79,9 +79,9 @@ budget, category, and occasion.
 <section id="generator" class="generator">
   <h2>Generate Your Gift Idea</h2>
 
-  <form id="giftForm" onsubmit="handleFormSubmit(event)">
+  <form id="giftForm">
     <label for="category">Category</label>
-    <select id="category" name="category" required>
+    <select id="category" required>
       <option value="" disabled selected>Select a category</option>
       <option value="tech">Technology</option>
       <option value="study">Study</option>
@@ -90,7 +90,7 @@ budget, category, and occasion.
     </select>
 
     <label for="budget">Budget</label>
-    <select id="budget" name="budget" required>
+    <select id="budget" required>
       <option value="" disabled selected>Select a budget</option>
       <option value="low">$0 - $20</option>
       <option value="medium">$20 - $50</option>
@@ -98,7 +98,7 @@ budget, category, and occasion.
     </select>
 
     <label for="occasion">Occasion</label>
-    <select id="occasion" name="occasion" required>
+    <select id="occasion" required>
       <option value="" disabled selected>Select an occasion</option>
       <option value="birthday">Birthday</option>
       <option value="holiday">Holiday</option>
@@ -108,17 +108,14 @@ budget, category, and occasion.
 
     <button type="submit">Generate Gift</button>
   </form>
- <button type="button" onclick="showFavorites()" class="view-fav-btn">
+
+  <button type="button" onclick="showFavorites()" class="view-fav-btn">
     📋 View My Favorites
   </button>
 
   <div id="giftResult"></div>
-</section>  <div id="giftResult"></div>
 </section>
 
-
-<!-- FIXED HTML -->
-<form id="giftForm" onsubmit="handleFormSubmit(event)">
   <!-- your labels and selects... -->
   
   <button type="submit">Generate Gift</button>
@@ -163,8 +160,7 @@ Architecture course project.
 </footer>
 
 <script src="js/giftDatabase.js"></script>
-
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
