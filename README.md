@@ -1,44 +1,84 @@
-# Practical Gift Generator Website 🎁
+# 🎁 Practical Gift Generator
 
-## Project Description
+## 📌 Project Description
 
-The Practical Gift Generator Website is a web-based platform designed to help users discover useful and thoughtful gift ideas. Visitors can enter their preferences, select a budget, and choose an occasion to receive practical gift suggestions that match their needs.
+Practical Gift Generator is a web application that helps users find useful and thoughtful gift ideas based on their preferences such as category, budget, and occasion.
 
-The website is designed to be simple, fast, and accessible through any modern web browser without requiring installation.
+The goal of this project is to simplify the process of choosing practical gifts that can be used in daily life.
 
-## Features
+---
 
-- Suggests practical and useful gift ideas
-- Allows users to select their preferred budget range
-- Filters gift suggestions based on categories and occasions
-- Easy-to-use web interface accessible from any device
-- Instant results displayed directly on the website
+## 🚀 Features
 
-## Technologies Used
+* 🎯 Smart gift suggestions based on user input
+* 💰 Budget-based filtering (low, medium, high)
+* 🎉 Occasion-based recommendations (birthday, holiday, graduation)
+* ❤️ Save favorite gifts
+* 🔄 Generate new gift ideas instantly
 
-- HTML – for structuring the website pages
-- CSS – for styling and layout design
-- JavaScript – for interactive functionality and gift generation logic
-- Node.js – for server-side processing and data handling if backend functionality is implemented
+---
 
-## Website Architecture
+## 🛠️ Technologies Used
 
-The system follows a 3-layer website architecture:
+* HTML5
+* CSS3
+* JavaScript (Vanilla JS)
+* Local Storage (for saving favorites)
 
-1. Presentation Layer (Frontend)  
-This layer represents the user interface of the website, including the web pages that users interact with. It is built using HTML, CSS, and JavaScript.
+---
 
-2. Application Layer (Backend Logic)  
-This layer handles the website logic, processing user input such as budget, category, and occasion to generate appropriate gift suggestions.
+## 📂 Project Structure
 
-3. Data Layer (Gift Data Storage)  
-This layer stores the gift information and categories used by the website to generate suggestions. Data may be stored in files or a database depending on the implementation.
+```
+Practical-gift-generator/
+│
+├── index.html
+├── script.js
+├── css/
+│   └── style.css
+└── js/
+    └── giftDatabase.js
+```
 
-## How to Run the Website
+---
 
-1. Clone the project repository
-2. Open the file `frontend/index.html`
+## ▶️ How to Run the Website
+
+1. Clone or download the project
+2. Open the file `index.html`
 3. Use the website directly in your browser
+
+---
+
+## 📸 How It Works
+
+1. Select a category
+2. Choose your budget
+3. Pick an occasion
+4. Click **Generate Gift**
+5. View and save your favorite gifts
+
+---
+
+## 🎯 Future Improvements
+
+* Add more gift categories
+* Improve UI/UX design
+* Add user accounts
+* Integrate recommendation algorithm
+
+---
+
+## 👨‍💻 Project Information
+
+This project was developed as part of the **SWE332 Software Architecture course**.
+
+---
+
+## 📄 License
+
+This project is for educational purposes only.
+
 
 ## Authors
 
