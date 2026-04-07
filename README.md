@@ -76,6 +76,13 @@ Practical-gift-generator/
 This project was developed as part of the **SWE332 Software Architecture course**.
 
 ---
+## 👥 Team Members (USERNAMES)
+
+* 👩‍💻 [tiaaaaa-coder](https://github.com/tiaaaaa-coder)
+* 👨‍💻 [Samir-maghrabi](https://github.com/Samir-maghrabi)
+* 👨‍💻 [halit-elselmani](https://github.com/halit-elselmani)
+  
+--- 
 
 ## 📄 License
 
