@@ -32,6 +32,7 @@ The JavaScript handles user input, processes gift data, and displays results.
 ## 6. Project structure:
 
 /project
+
   ├── index.html
   
   ├── css/
