@@ -33,10 +33,13 @@ The JavaScript handles user input, processes gift data, and displays results.
 
 /project
   ├── index.html
+  
   ├── css/
   │     └── style.css
+  
   ├── js/
   │     └── giftDatabase.js
+  
   ├── script.js
 ## 7. The system is hosted on GitHub Pages and accessed through a web browser such as Chrome or Safari.
 
