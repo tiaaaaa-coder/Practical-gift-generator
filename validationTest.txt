@@ -1,0 +1,4 @@
+Test cases:
+- Empty occasion
+- Negative budget
+- Valid input
