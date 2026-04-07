@@ -1,0 +1,5 @@
+Feature: Gift Generator UI
+
+- Created feature branch: feature/ui
+- Demonstrates GitFlow workflow
+- No impact on main project files
