@@ -35,9 +35,11 @@ The JavaScript handles user input, processes gift data, and displays results.
   ├── index.html
   
   ├── css/
+  
   │     └── style.css
   
   ├── js/
+  
   │     └── giftDatabase.js
   
   ├── script.js
