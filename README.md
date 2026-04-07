@@ -5,7 +5,9 @@
 Practical Gift Generator is a web application that helps users find useful and thoughtful gift ideas based on their preferences such as category, budget, and occasion.
 
 The goal of this project is to simplify the process of choosing practical gifts that can be used in daily life.
-
+## 📐 System Architecture
+For detailed architectural design following the 4+1 model, see:
+👉 [ARCHITECTURE.md](./ARCHITECTURE.md)
 ---
 
 ## 🚀 Features
