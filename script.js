@@ -11,6 +11,43 @@ const APP_CONFIG = {
 };
 // Language system state
 let currentLanguage = "en";
+// English translations
+const translations_en = {
+  navHome: "Home",
+  navFeatures: "Features",
+  navGenerator: "Try Generator",
+  navAbout: "About",
+
+  heroTitle: "Find The Perfect Practical Gift",
+  heroText: "Discover thoughtful and useful gift ideas based on budget, category, and occasion.",
+  heroButton: "Start Generating Gifts",
+
+  featuresTitle: "Website Features",
+  feature1Title: "Smart Gift Suggestions",
+  feature1Text: "The system suggests practical gift ideas based on user preferences.",
+  feature2Title: "Budget Friendly",
+  feature2Text: "Users can select their budget to receive affordable recommendations.",
+  feature3Title: "Occasion Based",
+  feature3Text: "Choose occasions like birthdays, holidays, or graduation.",
+
+  generatorTitle: "Generate Your Gift Idea",
+
+  categoryLabel: "Category",
+  categoryPlaceholder: "Select a category",
+
+  budgetLabel: "Budget",
+  budgetPlaceholder: "Select a budget",
+
+  occasionLabel: "Occasion",
+  occasionPlaceholder: "Select an occasion",
+
+  generateButton: "Generate Gift",
+  favoritesButton: "📋 View My Favorites",
+
+  aboutTitle: "About This Website",
+  footerTitle: "Practical Gift Generator",
+  footerText: "SWE332 Software Architecture Project"
+};
 
 // DATABASE MODULE (Singleton Pattern)
 // Single source of truth for gift data
