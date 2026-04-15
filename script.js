@@ -85,6 +85,25 @@ const translations_ar = {
   footerTitle: "مولد الهدايا",
   footerText: "مشروع SWE332"
 };
+function setLanguage(lang) {
+  currentLanguage = lang;
+
+  let selectedTranslations;
+
+  if (currentLanguage === "ar") {
+    selectedTranslations = translations_ar;
+  } else {
+    selectedTranslations = translations_en;
+  }
+
+  // Apply translations to elements
+  Object.keys(selectedTranslations).forEach(key => {
+    const element = document.getElementById(key);
+    if (element) {
+      element.textContent = selectedTranslations[key];
+    }
+  });
+}
 // DATABASE MODULE (Singleton Pattern)
 // Single source of truth for gift data
 const GiftDatabase = (function() {
