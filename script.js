@@ -9,6 +9,8 @@ const APP_CONFIG = {
   storageKey: 'giftFavorites',
   version: '1.0.0'
 };
+// Language system state
+let currentLanguage = "en";
 
 // DATABASE MODULE (Singleton Pattern)
 // Single source of truth for gift data
