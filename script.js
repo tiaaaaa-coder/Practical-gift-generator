@@ -392,7 +392,11 @@ function addActionButtons(container, gift) {
   const wrapper = UIFactory.createElement('div', 'action-buttons');
   
   // Save button (FEATURE)
-  const favBtn = UIFactory.createElement('button', 'btn-favorite', '❤️ Save');
+  const favBtn = UIFactory.createElement(
+  'button',
+  'btn-favorite',
+  currentLanguage === "ar" ? '❤️ حفظ' : '❤️ Save'
+);
   favBtn.onclick = () => {
     if (!currentSelection) return;
     const result = FavoritesManager.save(currentSelection);
