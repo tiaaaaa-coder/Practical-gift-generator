@@ -400,8 +400,15 @@ function addActionButtons(container, gift) {
   favBtn.onclick = () => {
     if (!currentSelection) return;
     const result = FavoritesManager.save(currentSelection);
-    favBtn.textContent = result.success ? '✓ Saved!' : '⚠️ Exists';
-    setTimeout(() => favBtn.textContent = '❤️ Save', 1500);
+    if (result.success) {
+  favBtn.textContent = currentLanguage === "ar" ? '✓ تم الحفظ!' : '✓ Saved!';
+} else {
+  favBtn.textContent = currentLanguage === "ar" ? '⚠️ موجود مسبقاً' : '⚠️ Exists';
+}
+
+setTimeout(() => {
+  favBtn.textContent = currentLanguage === "ar" ? '❤️ حفظ' : '❤️ Save';
+}, 1500);
   };
   
   // Regenerate button
