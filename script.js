@@ -48,7 +48,43 @@ const translations_en = {
   footerTitle: "Practical Gift Generator",
   footerText: "SWE332 Software Architecture Project"
 };
+// Arabic translations
+const translations_ar = {
+  navHome: "الرئيسية",
+  navFeatures: "المميزات",
+  navGenerator: "جرّب المولد",
+  navAbout: "حول",
 
+  heroTitle: "اعثر على الهدية العملية المثالية",
+  heroText: "اكتشف أفكار هدايا مفيدة حسب الفئة والميزانية والمناسبة.",
+  heroButton: "ابدأ التوليد",
+
+  featuresTitle: "مميزات الموقع",
+  feature1Title: "اقتراحات ذكية",
+  feature1Text: "يقترح النظام هدايا عملية حسب تفضيلات المستخدم.",
+  feature2Title: "مناسب للميزانية",
+  feature2Text: "يمكنك اختيار ميزانيتك للحصول على اقتراحات مناسبة.",
+  feature3Title: "حسب المناسبة",
+  feature3Text: "اختر المناسبة مثل عيد ميلاد أو تخرج.",
+
+  generatorTitle: "ولّد فكرة هدية",
+
+  categoryLabel: "الفئة",
+  categoryPlaceholder: "اختر فئة",
+
+  budgetLabel: "الميزانية",
+  budgetPlaceholder: "اختر ميزانية",
+
+  occasionLabel: "المناسبة",
+  occasionPlaceholder: "اختر مناسبة",
+
+  generateButton: "ولّد هدية",
+  favoritesButton: "📋 عرض المفضلة",
+
+  aboutTitle: "حول الموقع",
+  footerTitle: "مولد الهدايا",
+  footerText: "مشروع SWE332"
+};
 // DATABASE MODULE (Singleton Pattern)
 // Single source of truth for gift data
 const GiftDatabase = (function() {
