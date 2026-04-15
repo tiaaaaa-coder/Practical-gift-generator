@@ -55,15 +55,15 @@
     <section id="generator" class="generator">
         <h2>Generate Your Gift Idea</h2>
         <form id="giftForm">
-            <label for="category">Category</label>
-            <select id="category" name="category" required>
-                <option value="" disabled selected>Select a category</option>
-                <option value="tech">Technology</option>
-                <option value="study">Study</option>
-                <option value="selfcare">Self Care</option>
-                <option value="home">Home</option>
-                <option value="fashion">Fashion</option>
-            </select>
+            <label for="category" id="categoryLabel">Category</label>
+<select id="category" name="category" required>
+    <option value="" disabled selected id="categoryPlaceholder">Select a category</option>
+    <option value="tech" id="categoryTech">Technology</option>
+    <option value="study" id="categoryStudy">Study</option>
+    <option value="selfcare" id="categorySelfcare">Self Care</option>
+    <option value="home" id="categoryHome">Home</option>
+    <option value="fashion" id="categoryFashion">Fashion</option>
+</select>
 
             <label for="budget">Budget</label>
             <select id="budget" name="budget" required>
