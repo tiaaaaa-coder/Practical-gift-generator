@@ -417,7 +417,11 @@ result.innerHTML += `<p>${emptyMsg}</p>`;
   });
 
   // Clear all button
-  const clearBtn = UIFactory.createElement('button', 'btn-clear', 'Clear All');
+  const clearBtn = UIFactory.createElement(
+  'button',
+  'btn-clear',
+  currentLanguage === "ar" ? 'مسح الكل' : 'Clear All'
+);
   clearBtn.onclick = () => {
     if (confirm('Remove all?')) {
       FavoritesManager.clear();
