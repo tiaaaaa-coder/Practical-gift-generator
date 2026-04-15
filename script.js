@@ -45,6 +45,8 @@ const translations_en = {
   favoritesButton: "📋 View My Favorites",
 
   aboutTitle: "About This Website",
+  aboutText1: "The Practical Gift Generator is a website designed to help users quickly find practical and meaningful gifts. The system analyzes user preferences such as category, budget, and occasion to recommend suitable gift ideas.",
+aboutText2: "This website was developed as part of the SWE332 Software Architecture course project.",
   footerTitle: "Practical Gift Generator",
   footerText: "SWE332 Software Architecture Project"
 };
@@ -82,6 +84,8 @@ const translations_ar = {
   favoritesButton: "📋 عرض المفضلة",
 
   aboutTitle: "حول الموقع",
+  aboutText1: "موقع منشئ الهدايا العملية يساعد المستخدمين على العثور بسرعة على هدايا عملية ومناسبة. يقوم النظام بتحليل تفضيلات المستخدم مثل الفئة والميزانية والمناسبة لاقتراح أفكار هدايا مناسبة.",
+aboutText2: "تم تطوير هذا الموقع كجزء من مشروع مقرر هندسة البرمجيات SWE332.",
   footerTitle: "صانع الهدايا",
   footerText: "مشروع SWE332"
 };
