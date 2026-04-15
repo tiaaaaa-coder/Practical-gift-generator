@@ -17,7 +17,7 @@ For detailed architectural design following the 4+1 model, see:
 * 🎉 Occasion-based recommendations (birthday, holiday, graduation)
 * ❤️ Save favorite gifts
 * 🔄 Generate new gift ideas instantly
-
+* 🌍 Bilingual Support (English / Arabic)
 ---
 
 ## 🛠️ Technologies Used
