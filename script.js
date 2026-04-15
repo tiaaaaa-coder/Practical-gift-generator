@@ -13,6 +13,17 @@ const APP_CONFIG = {
 let currentLanguage = "en";
 // English translations
 const translations_en = {
+  categoryTech: "Technology",
+categoryStudy: "Study",
+categorySelfcare: "Self Care",
+categoryHome: "Home",
+categoryFashion: "Fashion",
+
+occasionBirthday: "Birthday",
+occasionHoliday: "Holiday",
+occasionGraduation: "Graduation",
+occasionGeneral: "Any Occasion",
+  
   navHome: "Home",
   navFeatures: "Features",
   navGenerator: "Try Generator",
@@ -52,6 +63,17 @@ aboutText2: "This website was developed as part of the SWE332 Software Architect
 };
 // Arabic translations
 const translations_ar = {
+  categoryTech: "التكنولوجيا",
+categoryStudy: "الدراسة",
+categorySelfcare: "العناية الذاتية",
+categoryHome: "المنزل",
+categoryFashion: "الأزياء",
+
+occasionBirthday: "عيد ميلاد",
+occasionHoliday: "عطلة",
+occasionGraduation: "تخرج",
+occasionGeneral: "أي مناسبة",
+  
   navHome: "الرئيسية",
   navFeatures: "المميزات",
   navGenerator: "جرّب الاداة",
