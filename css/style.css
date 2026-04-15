@@ -427,3 +427,11 @@ footer p {
     padding: 25px 20px;
   }
 }
+}
+.extra-message {
+  margin-top: 10px;
+  color: #666;
+  font-style: italic;
+  font-size: 0.95rem;
+  text-align: center;
+}
