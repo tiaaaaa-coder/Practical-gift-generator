@@ -177,12 +177,7 @@ const UIFactory = {
       holiday: '🎄 Holiday gift idea: ',
       general: '🎁 Recommended gift: '
     };
-const categoryIcons = {
-  tech: '💻',
-  study: '📚',
-  selfcare: '🧴',
-  home: '🏠',
-  fashion: '👗'
+
 };
 
 const icon = categoryIcons[currentSelection.category] || '🎁';
