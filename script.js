@@ -280,12 +280,19 @@ const UIFactory = {
 const badge = this.createElement('span', 'occasion-badge', messages[occasion] || messages.general);
 const name = this.createElement('strong', 'gift-name', gift);
 
-const extraMessages = {
-  birthday: '🎉 Make their day special!',
-  graduation: '🎓 Celebrate their success!',
-  holiday: '🎄 Spread joy and happiness!',
-  general: '✨ A perfect choice for any time!'
-};
+const messages = currentLanguage === "ar"
+  ? {
+      birthday: '🎂 هدية مثالية لعيد الميلاد: ',
+      graduation: '🎓 هدية رائعة للتخرج: ',
+      holiday: '🎄 فكرة هدية للعطلة: ',
+      general: '🎁 هدية مقترحة: '
+    }
+  : {
+      birthday: '🎂 Perfect birthday gift: ',
+      graduation: '🎓 Great graduation gift: ',
+      holiday: '🎄 Holiday gift idea: ',
+      general: '🎁 Recommended gift: '
+    };
 
 const extra = this.createElement('p', 'extra-message', extraMessages[occasion] || extraMessages.general);
 
