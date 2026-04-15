@@ -423,7 +423,11 @@ result.innerHTML += `<p>${emptyMsg}</p>`;
   currentLanguage === "ar" ? 'مسح الكل' : 'Clear All'
 );
   clearBtn.onclick = () => {
-    if (confirm('Remove all?')) {
+    const confirmMsg = currentLanguage === "ar"
+  ? "هل تريد حذف الكل؟"
+  : "Remove all?";
+
+if (confirm(confirmMsg)) {
       FavoritesManager.clear();
       showFavorites();
     }
