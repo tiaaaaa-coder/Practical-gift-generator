@@ -111,6 +111,83 @@ aboutText2: "تم تطوير هذا الموقع كجزء من مشروع مقر
   footerTitle: "صانع الهدايا",
   footerText: "مشروع SWE332"
 };
+const giftTranslations_ar = {
+  "USB Flash Drive": "ذاكرة USB",
+  "Phone Stand": "حامل هاتف",
+  "Cable Organizer": "منظم كابلات",
+  "Screen Cleaner Kit": "عدة تنظيف الشاشة",
+  "Laptop Sleeve": "حافظة لابتوب",
+  "Webcam Cover": "غطاء كاميرا",
+  "Cable Ties Set": "رباط كابلات",
+  "Phone Ring Holder": "حلقة هاتف",
+  "Screen Protector": "حماية شاشة",
+  "Earphone Case": "علبة سماعات",
+  "Mini Flashlight": "مصباح صغير",
+  "Bluetooth Tracker": "متعقب بلوتوث",
+
+  "Wireless Mouse": "فأرة لاسلكية",
+  "Bluetooth Speaker": "سماعة بلوتوث",
+  "Portable Charger": "شاحن محمول",
+  "LED Desk Light": "مصباح مكتب",
+  "Mechanical Keyboard Keycaps": "أزرار كيبورد",
+  "USB-C Hub": "موزع USB-C",
+  "Wireless Charging Pad": "شاحن لاسلكي",
+  "Noise Cancelling Earbuds": "سماعات عازلة",
+  "Smart Home Plug": "مقبس ذكي",
+  "Digital Photo Frame": "إطار صور رقمي",
+  "Fitness Tracker Band": "سوار لياقة",
+  "Tablet Stylus": "قلم تابلت",
+  "Portable SSD 256GB": "قرص SSD محمول",
+
+  "Smart Watch": "ساعة ذكية",
+  "Wireless Earbuds Pro": "سماعات احترافية",
+  "Mechanical Keyboard": "كيبورد ميكانيكي",
+  "Tablet Stand": "حامل تابلت",
+  "Noise Cancelling Headphones": "سماعات عازلة",
+  "Smart Display": "شاشة ذكية",
+  "Robot Vacuum": "مكنسة روبوت",
+  "Gaming Mouse": "فأرة ألعاب",
+  "4K Webcam": "كاميرا 4K",
+  "Smart Doorbell": "جرس ذكي",
+  "Drone": "طائرة درون",
+  "VR Headset": "نظارة VR",
+
+  "Notebook": "دفتر",
+  "Planner": "مخطط",
+  "Pen Set": "مجموعة أقلام",
+  "Sticky Notes Kit": "ملاحظات لاصقة",
+  "Highlighters Pack": "أقلام تظليل",
+  "Desk Lamp": "مصباح مكتب",
+  "Whiteboard": "سبورة",
+  "Book Stand": "حامل كتب",
+  "Study Timer": "مؤقت دراسة",
+
+  "Coffee Mug": "كوب قهوة",
+  "Water Bottle": "زجاجة ماء",
+  "Scented Candle": "شمعة معطرة",
+  "Key Organizer": "منظم مفاتيح",
+  "Lip Balm Set": "مرطب شفاه",
+  "Yoga Mat": "سجادة يوغا",
+  "Aroma Diffuser": "ناشر عطر",
+  "Tea Set": "طقم شاي",
+  "Indoor Plant": "نبتة داخلية",
+
+  "Kitchen Timer": "مؤقت مطبخ",
+  "Measuring Cup Set": "أكواب قياس",
+  "Mini Storage Boxes": "صناديق تخزين",
+  "Electric Kettle": "غلاية كهربائية",
+  "Blender": "خلاط",
+  "Rice Cooker": "قدر أرز",
+
+  "Scarf": "وشاح",
+  "Cap": "قبعة",
+  "Bracelet": "سوار",
+  "Socks Set": "جوارب",
+  "Leather Wallet": "محفظة جلد",
+  "Handbag": "حقيبة يد",
+  "Watch": "ساعة",
+  "Sunglasses": "نظارات شمسية"
+};
 function setLanguage(lang) {
   currentLanguage = lang;
 
@@ -307,7 +384,11 @@ const UIFactory = {
 
  const container = this.createElement('div', 'gift-result-container');
 const badge = this.createElement('span', 'occasion-badge', messages[occasion] || messages.general);
-const name = this.createElement('strong', 'gift-name', gift);
+const translatedGift = currentLanguage === "ar"
+  ? (giftTranslations_ar[gift] || gift)
+  : gift;
+
+const name = this.createElement('strong', 'gift-name', translatedGift);
 
 const extraMessages = currentLanguage === "ar"
   ? {
