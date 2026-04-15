@@ -177,22 +177,20 @@ const UIFactory = {
       holiday: '🎄 Holiday gift idea: ',
       general: '🎁 Recommended gift: '
     };
-const icons = {
-  'USB Flash Drive': '💾',
-  'Phone Stand': '📱',
-  'Notebook': '📓',
-  'Planner': '🗂️',
-  'Coffee Mug': '☕',
-  'Water Bottle': '🚰',
-  'Scented Candle': '🕯️',
-  'Air Fryer': '🍳',
-  'Blender': '🥤',
-  'Smart Watch': '⌚',
+const categoryIcons = {
+  tech: '💻',
+  study: '📚',
+  selfcare: '🧴',
+  home: '🏠',
+  fashion: '👗'
+};
+
+const icon = categoryIcons[currentSelection.category] || '🎁';
+const name = this.createElement('strong', 'gift-name', `${icon} ${gift}`);
 };
     const container = this.createElement('div', 'gift-result-container');
     const badge = this.createElement('span', 'occasion-badge', messages[occasion] || messages.general);
-   const icon = icons[gift] || '🎁';
-const name = this.createElement('strong', 'gift-name', `${icon} ${gift}`);
+ const name = this.createElement('strong', 'gift-name', gift);
     
     container.appendChild(badge);
     container.appendChild(name);
