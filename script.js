@@ -52,22 +52,22 @@ const translations_en = {
 const translations_ar = {
   navHome: "الرئيسية",
   navFeatures: "المميزات",
-  navGenerator: "جرّب المولد",
+  navGenerator: "جرّب الاداة",
   navAbout: "حول",
 
   heroTitle: "اعثر على الهدية العملية المثالية",
-  heroText: "اكتشف أفكار هدايا مفيدة حسب الفئة والميزانية والمناسبة.",
-  heroButton: "ابدأ التوليد",
+  heroText: "اكتشف أفكار هدايا مفيدة حسب الفئة والميزانية والمناسبة",
+  heroButton: "ابدأ الانشاء",
 
   featuresTitle: "مميزات الموقع",
   feature1Title: "اقتراحات ذكية",
-  feature1Text: "يقترح النظام هدايا عملية حسب تفضيلات المستخدم.",
+  feature1Text: "يقترح النظام هدايا عملية حسب تفضيلات المستخدم",
   feature2Title: "مناسب للميزانية",
-  feature2Text: "يمكنك اختيار ميزانيتك للحصول على اقتراحات مناسبة.",
+  feature2Text: "يمكنك اختيار ميزانيتك للحصول على اقتراحات مناسبة",
   feature3Title: "حسب المناسبة",
   feature3Text: "اختر المناسبة مثل عيد ميلاد أو تخرج.",
 
-  generatorTitle: "ولّد فكرة هدية",
+  generatorTitle: "انشئ فكرة هدية",
 
   categoryLabel: "الفئة",
   categoryPlaceholder: "اختر فئة",
@@ -78,11 +78,11 @@ const translations_ar = {
   occasionLabel: "المناسبة",
   occasionPlaceholder: "اختر مناسبة",
 
-  generateButton: "ولّد هدية",
+  generateButton: "انشئ هدية",
   favoritesButton: "📋 عرض المفضلة",
 
   aboutTitle: "حول الموقع",
-  footerTitle: "مولد الهدايا",
+  footerTitle: "صانع الهدايا",
   footerText: "مشروع SWE332"
 };
 function setLanguage(lang) {
