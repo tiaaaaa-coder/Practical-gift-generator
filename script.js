@@ -393,7 +393,11 @@ function showFavorites() {
   const result = document.getElementById('giftResult');
   const favorites = FavoritesManager.getAll();
   
-  result.innerHTML = '<h3>❤️ Your Favorites</h3>';
+  const title = currentLanguage === "ar"
+  ? "❤️ المفضلة"
+  : "❤️ Your Favorites";
+
+result.innerHTML = `<h3>${title}</h3>`;
   
   if (favorites.length === 0) {
     result.innerHTML += '<p>No favorites saved yet</p>';
