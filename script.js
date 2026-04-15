@@ -324,6 +324,13 @@ function setLanguage(lang) {
     selectedTranslations = translations_ar;
   } else {
     selectedTranslations = translations_en;
+  if (currentLanguage === "ar") {
+  document.body.style.direction = "rtl";
+  document.body.style.textAlign = "right";
+} else {
+  document.body.style.direction = "ltr";
+  document.body.style.textAlign = "left";
+}
   }
 
   // Apply translations to elements
