@@ -400,7 +400,11 @@ function showFavorites() {
 result.innerHTML = `<h3>${title}</h3>`;
   
   if (favorites.length === 0) {
-    result.innerHTML += '<p>No favorites saved yet</p>';
+   const emptyMsg = currentLanguage === "ar"
+  ? "لا توجد عناصر محفوظة بعد"
+  : "No favorites saved yet";
+
+result.innerHTML += `<p>${emptyMsg}</p>`;
     return;
   }
 
