@@ -178,13 +178,23 @@ const UIFactory = {
     general: '🎁 Recommended gift: '
   };
 
-  const container = this.createElement('div', 'gift-result-container');
-  const badge = this.createElement('span', 'occasion-badge', messages[occasion] || messages.general);
-  const name = this.createElement('strong', 'gift-name', gift);
+ const container = this.createElement('div', 'gift-result-container');
+const badge = this.createElement('span', 'occasion-badge', messages[occasion] || messages.general);
+const name = this.createElement('strong', 'gift-name', gift);
 
-  container.appendChild(badge);
-  container.appendChild(name);
-  return container;
+const extraMessages = {
+  birthday: '🎉 Make their day special!',
+  graduation: '🎓 Celebrate their success!',
+  holiday: '🎄 Spread joy and happiness!',
+  general: '✨ A perfect choice for any time!'
+};
+
+const extra = this.createElement('p', 'extra-message', extraMessages[occasion] || extraMessages.general);
+
+container.appendChild(badge);
+container.appendChild(name);
+container.appendChild(extra);
+return container;
 },
   createFavoriteCard(favorite, onRemove) {
     const card = this.createElement('div', 'favorite-card');
