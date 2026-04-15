@@ -73,13 +73,13 @@
 <option value="high" id="budgetHigh">$50+</option>
             </select>
 
-            <label for="occasion">Occasion</label>
-            <select id="occasion" name="occasion" required>
-                <option value="" disabled selected>Select an occasion</option>
-                <option value="birthday">Birthday</option>
-                <option value="holiday">Holiday</option>
-                <option value="graduation">Graduation</option>
-                <option value="general">Any Occasion</option>
+            <label for="occasion" id="occasionLabel">Occasion</label>
+<select id="occasion" name="occasion" required>
+                <option value="" disabled selected id="occasionPlaceholder">Select an occasion</option>
+<option value="birthday" id="occasionBirthday">Birthday</option>
+<option value="holiday" id="occasionHoliday">Holiday</option>
+<option value="graduation" id="occasionGraduation">Graduation</option>
+<option value="general" id="occasionGeneral">Any Occasion</option>
             </select>
 
             <button type="submit">Generate Gift</button>
