@@ -412,7 +412,11 @@ setTimeout(() => {
   };
   
   // Regenerate button
-  const regenBtn = UIFactory.createElement('button', 'btn-regenerate', '🔄 New Gift');
+  const regenBtn = UIFactory.createElement(
+  'button',
+  'btn-regenerate',
+  currentLanguage === "ar" ? '🔄 هدية جديدة' : '🔄 New Gift'
+);
   regenBtn.onclick = () => generateGift({ preventDefault: () => {} });
   
   wrapper.appendChild(favBtn);
