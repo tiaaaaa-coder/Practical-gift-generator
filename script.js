@@ -269,23 +269,37 @@ const UIFactory = {
   },
 
   createGiftCard(gift, occasion) {
-  const messages = {
-    birthday: '🎂 Perfect birthday gift: ',
-    graduation: '🎓 Great graduation gift: ',
-    holiday: '🎄 Holiday gift idea: ',
-    general: '🎁 Recommended gift: '
-  };
+ const messages = currentLanguage === "ar"
+  ? {
+      birthday: '🎂 هدية مثالية لعيد الميلاد: ',
+      graduation: '🎓 هدية رائعة للتخرج: ',
+      holiday: '🎄 فكرة هدية للعطلة: ',
+      general: '🎁 هدية مقترحة: '
+    }
+  : {
+      birthday: '🎂 Perfect birthday gift: ',
+      graduation: '🎓 Great graduation gift: ',
+      holiday: '🎄 Holiday gift idea: ',
+      general: '🎁 Recommended gift: '
+    };
 
  const container = this.createElement('div', 'gift-result-container');
 const badge = this.createElement('span', 'occasion-badge', messages[occasion] || messages.general);
 const name = this.createElement('strong', 'gift-name', gift);
 
-const extraMessages = {
-  birthday: '🎉 Make their day special!',
-  graduation: '🎓 Celebrate their success!',
-  holiday: '🎄 Spread joy and happiness!',
-  general: '✨ A perfect choice for any time!'
-};
+const extraMessages = currentLanguage === "ar"
+  ? {
+      birthday: '🎉 اجعل يومهم مميزاً!',
+      graduation: '🎓 احتفل بنجاحهم!',
+      holiday: '🎄 انشر الفرح والسعادة!',
+      general: '✨ اختيار رائع في أي وقت!'
+    }
+  : {
+      birthday: '🎉 Make their day special!',
+      graduation: '🎓 Celebrate their success!',
+      holiday: '🎄 Spread joy and happiness!',
+      general: '✨ A perfect choice for any time!'
+    };
 
 const extra = this.createElement('p', 'extra-message', extraMessages[occasion] || extraMessages.general);
 
