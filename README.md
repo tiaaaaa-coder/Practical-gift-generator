@@ -83,7 +83,12 @@ This project was developed as part of the **SWE332 Software Architecture course*
 * 👨‍💻 [halit-elselmani](https://github.com/halit-elselmani)
   
 --- 
+## 💡 Improvements
 
+- Improved UI design
+- Added better user messages
+- Enhanced user experience
+---
 ## 📄 License
 
 This project is for educational purposes only.
