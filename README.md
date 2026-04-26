@@ -9,7 +9,10 @@ The goal of this project is to simplify the process of choosing practical gifts 
 For detailed architectural design following the 4+1 model, see:
 👉 [ARCHITECTURE.md](./ARCHITECTURE.md)
 ---
-
+##youtube/github repo links
+https://youtu.be/u2zzuGHZWLI
+https://tiaaaaa-coder.github.io/Practical-gift-generator/
+---
 ## 🚀 Features
 
 * 🎯 Smart gift suggestions based on user input
